@@ -75,13 +75,32 @@ Bracket expressions are matching or non-matching list expression and consists of
 It represents a special character class and is a quantified rule providing range construct.
 They adapt to a users or applications locale.
 ### Greedy and Lazy Match
-
+A greedy match is a search that will try to find the longest possible string,
+A lazy match search will find the smallest possible string.
+Some Greedy quantifiers are:
++ = one or more revised gist
+* = Zero or more
+{2,4} = Two to four times as greedy
+A Lazy Qualifiers is:
+?
 ### Boundaries
+Boundaries are similar to an anchor and uses the expression \b for word boundaries and \B for non-word boundaries.
 
+They are a zero-length match that marks the beginning and end of an alphanumerical sequence and will make it easier to find whole words. The beginning of this expression:
+\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*) is searching for a whole word or digit.
 ### Back-references
+Backreferences are filters used to match the same text previously matched by a capturing group.
 
+An example would be when you desire to search for a repeated word,
+the first match could use a pattern that extracts a signle word,
+the second would be a back reference that referes to the captured group.
 ### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile
+## Mari's github
+https://github.com/Champagnest
+
+## Mari's email
+mailto:mchampagned@protonmail.com
