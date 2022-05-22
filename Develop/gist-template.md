@@ -103,7 +103,7 @@ the second would be a back reference that referes to the captured group.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile
+My name is Mari and I am a newly minted developer. I have completed the UC Berkeley extension full stack web dev bootcamp. I also hold a BA in Womens and gender studies from San Francisco state. My hobbies include music, coding, and board sports.
 ## Mari's github
 https://github.com/Champagnest
 
