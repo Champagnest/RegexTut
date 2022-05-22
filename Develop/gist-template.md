@@ -38,7 +38,8 @@ https? for example. The ? will make the preceeding time optional.
 The OR operator's purpose is to match the characters on the left or right of the operator, serving as an or, as in and/or.
 
 Using the | as in m|M would match either m or an M from the string.
-If we had used https?:\/\/(www\.)?[\d-a|A it would search for a OR A.
+If we had used 
+https?:\/\/(www\.)?[\d-a|A it would search for a OR A.
 ### Character Classes
 A character class is the set of characters that could occur in a string.
 
@@ -51,6 +52,7 @@ Any character with the regex 's' flag, while the included \w character is lookin
 Flags are used at the end of a regex, after a closing slash. They are toeksn that will modify the parametes of a search. Many flags can be set by writiing one after the other with no spaces. Flags mst be written in lowercase. The URL does not contain any flags.
 
 An example of a flag would be if the above expression showed:
+
 https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)g
 
 Other Flag Expressions:
@@ -65,10 +67,12 @@ m: Multiline. Makes boudnary characters ^ and $ match beginning and end of every
 Capturing Group is a part of a pattern that can be enclosed in a parentheses () and is a way to treat multiple characters as one unit.
 
 The example expression has many groupings such as:
-https?:\/\/ which is looking for the http(s)
-(www\.)?[\d-a-zA-Z0-9@:%._\+~#=] which will look for initial domain
-[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=] looks for top level domain
-and *) file paths.
+
+https?:\/\/ which is looking for the 
+http(s)(www\.)?[\d-a-zA-Z0-9@:%._\+~#=] 
+which will look for initial domain
+[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=] 
+looks for top level domain and *) file paths.
 ### Bracket Expressions
 Bracket expressions are matching or non-matching list expression and consists of one or more expressions that will be found in square brackets []
 
@@ -87,7 +91,8 @@ A Lazy Qualifiers is:
 Boundaries are similar to an anchor and uses the expression \b for word boundaries and \B for non-word boundaries.
 
 They are a zero-length match that marks the beginning and end of an alphanumerical sequence and will make it easier to find whole words. The beginning of this expression:
-\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*) is searching for a whole word or digit.
+\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*) 
+is searching for a whole word or digit.
 ### Back-references
 Backreferences are filters used to match the same text previously matched by a capturing group.
 
