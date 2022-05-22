@@ -70,7 +70,10 @@ https?:\/\/ which is looking for the http(s)
 [a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=] looks for top level domain
 and *) file paths.
 ### Bracket Expressions
-Bracket expressions 
+Bracket expressions are matching or non-matching list expression and consists of one or more expressions that will be found in square brackets []
+
+It represents a special character class and is a quantified rule providing range construct.
+They adapt to a users or applications locale.
 ### Greedy and Lazy Match
 
 ### Boundaries
